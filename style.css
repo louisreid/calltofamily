@@ -1,0 +1,88 @@
+/*
+Theme Name: Call to family
+Author: Louis Reid 
+Author URI: http://louisreid.net/
+Version: 1.0
+Tags: responsive, white, bootstrap
+*/
+
+@import url('http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Amatic+SC:700');
+
+body {
+	font-family: 'PT Serif', Georgia, serif;
+	font-size: 22px;
+	line-height: 1.5em;
+	color: #333;
+}
+
+.full-width {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.content-width {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.header-image {
+	background-image: url(img/calltofamily.jpg); 
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	max-width: 980px;
+	height: 640px;
+	display: block;
+}
+
+.menu {
+	font-family: 'Amatic SC', Tahoma;
+	font-size: 2.5em;
+	padding-right: 22px;
+}
+
+a, a:visited, a:active {
+	color: #111;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+.line {
+	max-width: 980px;
+	height: 16px;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+.line-blue {background: url(img/line_blue.gif) no-repeat;}
+.line-red {background: url(img/line_red.gif) no-repeat;}
+.line-orange {background: url(img/line_orange.gif) no-repeat;}
+
+
+.search {
+	border-style: solid;
+	border-width: 2px;
+	font-family: 'Amatic SC', Tahoma;	
+	font-size: 1.5em;
+	width: 245px;
+	margin-top:-15px;
+}
+
+.preview-title {
+	font-family: 'Amatic SC', Tahoma;	
+	font-size: 2.727em; 
+	color: #111;
+	padding-bottom: 0.2em;
+}
+
+.preview-content {
+	padding-bottom: 0.2em;
+}
+
+#nav-below {
+	margin: 0 auto;
+}
