@@ -13,7 +13,7 @@ get_header(); ?>
 
 			<div class="entry-content">
 
-			<?php wp_list_pages( 'title_li=' ); ?>
+			<?php echo wp_list_pages( 'title_li=' ); ?>
 
 			<?php the_content(); ?>
 			</div><!-- .entry-content -->
