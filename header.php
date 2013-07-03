@@ -52,6 +52,7 @@
 			<div class="container-fluid full-width">
 				<div class="row-fluid">
 					<div class="span12 header-image">
+						<a href="<?php bloginfo('url'); ?>"><span class="header-link"></span></a>
 					</div>
 				</div>
 			</div>
@@ -69,10 +70,10 @@
 							    $category_music_id = get_cat_ID( 'music' );
 							    $category_music = get_category_link( $category_music_id );
 							?>
-							<a href="" class="menu">ABOUT</a>
+							<a href="<?php bloginfo('url'); ?>/about/" class="menu">ABOUT</a>
 							<a href="<?php echo esc_url( $category_writing ); ?>" class="menu">WRITING</a>
 							<a href="<?php echo esc_url( $category_music ); ?>" class="menu">MUSIC</a> 
-							<a href="http://localhost:8888/personal/call%20to%20family/site/wordpress/?page_id=324" class="menu">ARCHIVE</a>
+							<a href="<?php bloginfo('url'); ?>/archive/" class="menu">ARCHIVE</a>
 						</div>
 						<div class="span4">
 							<form action="<?php echo home_url( '/' ); ?>" method="get">
