@@ -10,10 +10,10 @@
 				<h1 class="title">
 					<a class="no-underline" href="<?php the_permalink(); ?>" title="<?php printf( __('Permalink to %s', 'hbd-theme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a>
 				</h1>
-				<h2 class="meta">
+				<h6 class="meta">
 					by <a class="meta-link no-underline" href="<?php echo get_author_link( false, $authordata->ID, $authordata->user_nicename ); ?>" title="<?php printf( __( 'View all posts by %s', 'hbd-theme' ), $authordata->display_name ); ?>"><?php the_author(); ?></a>
 					on <?php the_time( get_option( 'date_format' ) ); ?>
-	            </h2>
+	            </h6>
 			</div>
 			
 			<div class="content single-content">
