@@ -105,6 +105,11 @@ a:hover {
 }
 a.meta-link:link, a.meta-link:visited {color: #a2a2a2;}
 
+a.no-underline, a.no-underline:hover, a.no-underline:visited, a.no-underline:active {
+	text-decoration: none;
+}
+
+
 
 .preview-content {
 	padding-bottom: 0.2em;

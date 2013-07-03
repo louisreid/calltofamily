@@ -12,7 +12,7 @@
 	        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<div class="preview-header">
 					<h1 class="title">
-						<a href="<?php the_permalink(); ?>" title="<?php printf( __('Permalink to %s', 'hbd-theme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a>
+						<a class="no-underline" href="<?php the_permalink(); ?>" title="<?php printf( __('Permalink to %s', 'hbd-theme'), the_title_attribute('echo=0') ); ?>"><?php the_title(); ?></a>
 					</h1>
 				</div>
 	            <div class="content preview-content">
