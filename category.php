@@ -5,7 +5,7 @@
             <?php the_post(); ?>          
 
 				<h1 class="title cat-header"><?php single_cat_title() ?></h1>
-				<h2 class="cat-desc"><?php $categorydesc = category_description(); if ( !empty($categorydesc) ) echo apply_filters( 'archive_meta', '<div class="archive-meta">' . $categorydesc . '</div>' ); ?></h2>
+				<h6 class="cat-desc"><?php $categorydesc = category_description(); if ( !empty($categorydesc) ) echo apply_filters( 'archive_meta', '<div class="archive-meta">' . $categorydesc . '</div>' ); ?></h6>
 				
 
 				<?php rewind_posts(); ?>
@@ -14,7 +14,7 @@
 			        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<div class="preview-header">
 							<h1 class="title">
-								<a href="<?php the_permalink(); ?>" title="<?php printf( __('Permalink to %s', 'hbd-theme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a>
+								<a class="no-underline" href="<?php the_permalink(); ?>" title="<?php printf( __('Permalink to %s', 'hbd-theme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a>
 							</h1>
 						</div>
 			            <div class="content preview-content">

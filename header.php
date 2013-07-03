@@ -8,7 +8,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title><?php wp_title(''); ?></title>
+		<title><?php get_bloginfo( 'name' ); ?> </title>
 
 		<!-- mobile meta  -->
 		<meta name="HandheldFriendly" content="True">
