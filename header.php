@@ -57,16 +57,22 @@
 			</div>
 
 			<div class="container-fluid content-width">
+				<div class="row-fluid">
+					<div class="span12 line line-red"></div>
+				</div>
 				<nav role="navigation">
 					<div class="row-fluid">
-						<div class="span12 line line-blue"></div>
-					</div>
-					<div class="row-fluid">
 						<div class="span8" >
+							<?php
+							    $category_writing_id = get_cat_ID( 'writing' );
+							    $category_writing = get_category_link( $category_writing_id );
+							    $category_music_id = get_cat_ID( 'music' );
+							    $category_music = get_category_link( $category_music_id );
+							?>
 							<a href="" class="menu">ABOUT</a>
-							<a href="" class="menu">WRITING</a>
-							<a href="" class="menu">MUSIC</a> 
-							<a href="" class="menu">ARCHIVE</a>
+							<a href="<?php echo esc_url( $category_writing ); ?>" class="menu">WRITING</a>
+							<a href="<?php echo esc_url( $category_music ); ?>" class="menu">MUSIC</a> 
+							<a href="http://localhost:8888/personal/call%20to%20family/site/wordpress/?page_id=324" class="menu">ARCHIVE</a>
 						</div>
 						<div class="span4">
 							<form action="<?php echo home_url( '/' ); ?>" method="get">
@@ -77,7 +83,7 @@
 						</div>
 					</div>
 					<div class="row-fluid">
-						<div class="span12 line line-red"></div>
+						<div class="span12 line line-orange"></div>
 					</div>
 				</nav>
 			</div> <!-- end content-width !-->

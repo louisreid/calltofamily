@@ -40,14 +40,23 @@ body {
 	padding-right: 22px;
 }
 
-a, a:visited, a:active {
+a.menu, a.menu:visited, a.menu:active {
 	color: #111;
 	text-decoration: none;
 }
 
-a:hover {
+a.menu:hover {
 	color: #333;
 	text-decoration: none;
+}
+
+a, a:visited, a:active {
+	color: #111;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #333;
 }
 
 .line {
@@ -55,12 +64,13 @@ a:hover {
 	height: 16px;
 	display: block;
 	margin-top: 5px;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 }
 
-.line-blue {background: url(img/line_blue.gif) no-repeat;}
-.line-red {background: url(img/line_red.gif) no-repeat;}
-.line-orange {background: url(img/line_orange.gif) no-repeat;}
+.line-blue {background: url(img/line-blue.gif) no-repeat;}
+.line-red {background: url(img/line-red.gif) no-repeat;}
+.line-orange {background: url(img/line-orange.gif) no-repeat;}
+.line-green {background: url(img/line-green.gif) no-repeat;}
 
 
 .search {
@@ -72,17 +82,81 @@ a:hover {
 	margin-top:-15px;
 }
 
-.preview-title {
+/* ------------ blog post styles*/
+
+.title {
 	font-family: 'Amatic SC', Tahoma;	
 	font-size: 2.727em; 
 	color: #111;
-	padding-bottom: 0.2em;
 }
+
+.preview-header {
+	padding-bottom: 0.5em;
+}
+.single-header {
+	padding-bottom: 0.5em;
+}
+
+.meta {
+	color: #a2a2a2;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 1em;
+}
+a.meta-link:link, a.meta-link:visited {color: #a2a2a2;}
+
 
 .preview-content {
 	padding-bottom: 0.2em;
 }
-
-#nav-below {
-	margin: 0 auto;
+.single-content {
+	padding-bottom: 0.7em;
 }
+
+.nav-below {
+	text-align: center;
+}
+
+/*------------ category / archive /search styles */
+
+.cat-header {
+	padding-bottom: 0.1em;
+}
+
+.cat-desc {
+	padding-bottom: 2em;
+	line-height: 1.45em;
+	font-size: 0.9em;
+	font-weight: 400;
+	font-style: italic;
+}
+
+li {
+	padding-bottom: 10px;
+	line-height: 1.2em;
+}
+
+
+/*------------ footer styles */
+
+ .footer {
+ 	background: url(img/footer-bg.jpg) no-repeat;
+ 	color: #fff;
+ 	max-width: 800px;
+ 	height: 300px;
+ 	padding-top: 170px;
+ 	display: block;
+ 	font-family: 'Amatic SC', Tahoma;
+ 	text-align: center;
+ }
+
+ .footer-h1 {font-size: 2.1em;}
+ .footer-link {font-size: 1.5em;}
+
+ a.footer-link, a.footer-link:visited, a.footer-link:active {
+ 	color: #fff;
+ }
+
+ a.footer-link:hover {
+ 	color: #d9d9d9;
+ }
