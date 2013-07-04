@@ -6,19 +6,29 @@ get_header(); ?>
 <div role="main">
 	<div class="row-fluid">
 		<div class="span12">
-			<?php the_post(); ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				
-			<h1 class="entry-title"><?php the_title(); ?></h1>
+			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+			<div class="post-page" id="post-<?php the_ID(); ?>">
+			<h1><?php the_title(); ?></h1>
+			<?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
 
-			<div class="entry-content">
+			<h2>Archives by Title:</h2>
+			<ul>
+			    <?php wp_get_archives('type=alpha');?>
+			</ul>
 
-			<?php echo wp_list_pages( 'title_li=' ); ?>
+			<h2>Archives by Month:</h2>
+			<ul>
+			    <?php wp_get_archives('type=monthly'); ?>
+			</ul>
 
-			<?php the_content(); ?>
-			</div><!-- .entry-content -->
+			<h2>Archives by Subject:</h2>
+			<ul>
+			    <?php wp_list_categories('title_li='); ?>
+			</ul>
 
-			<?php endwhile; // end of the loop. ?>
+			<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
+			</div>
+			<?php endwhile; endif; ?>
 		</div>
 	</div>
 </div>
