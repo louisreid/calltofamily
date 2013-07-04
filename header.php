@@ -75,11 +75,9 @@
 							<a href="<?php echo esc_url( $category_music ); ?>" class="menu">MUSIC</a> 
 							<a href="<?php bloginfo('url'); ?>/archive/" class="menu">ARCHIVE</a>
 						</div>
-						<div class="span4">
-							<form action="<?php echo home_url( '/' ); ?>" method="get">
-							    <fieldset>
-										<input class="search" name="s" value="<?php the_search_query(); ?>" />
-							    </fieldset>
+						<div class="span4 search-div">
+							<form action="<?php echo home_url( '/' ); ?>">
+								<input class="search" name="s" value="<?php the_search_query(); ?>" />
 							</form>
 						</div>
 					</div>

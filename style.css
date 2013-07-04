@@ -92,10 +92,11 @@ a:hover {
 .search {
 	border-style: solid;
 	border-width: 2px;
-	font-family: 'Amatic SC', Tahoma;	
 	font-size: 1.5em;
-	width: 245px;
 	margin-top:-15px;
+}
+.search-div {
+	text-align: right;
 }
 
 /* ------------ blog post styles*/

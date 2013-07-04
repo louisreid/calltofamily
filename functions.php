@@ -45,4 +45,7 @@ add_action( 'wp_enqueue_scripts', 'theme_js' );
 add_filter( 'the_excerpt', 'shortcode_unautop');
 add_filter( 'the_excerpt', 'do_shortcode');
 
+register_sidebar(array('name'=>'Search Widget',));
+
+
 ?>
