@@ -126,7 +126,9 @@ a.no-underline, a.no-underline:hover, a.no-underline:visited, a.no-underline:act
 	text-decoration: none;
 }
 
-
+.continue {
+	font-style: italic;
+}
 
 .preview-content {
 	padding-bottom: 0.2em;
@@ -159,6 +161,8 @@ h2 {
 	font-weight: 400;
 	font-style: italic;
 }
+
+.search-header{padding-top: 0.5em;}
 
 li {
 	padding-bottom: 10px;

@@ -19,8 +19,8 @@
 						</div>
 			            <div class="content preview-content">
 					      	<?php the_excerpt(); ?> 
-							<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'hbd-theme' ) . '&after=</div>') ?>
-			                <span class="meta-prep meta-prep-author"><?php _e('by ', 'hbd-theme'); ?></span>
+					      	<a class="continue" href="<?php the_permalink(); ?>">Continue Reading</a>
+			                <span class="meta-prep meta-prep-author"><?php _e(' | by ', 'hbd-theme'); ?></span>
 			                <span class="author vcard"><a class="url fn n" href="<?php echo get_author_link( false, $authordata->ID, $authordata->user_nicename ); ?>" title="<?php printf( __( 'View all posts by %s', 'hbd-theme' ), $authordata->display_name ); ?>"><?php the_author(); ?></a></span>
 			            </div><!-- .entry-content -->
 			        </div><!-- #post-<?php the_ID(); ?> -->

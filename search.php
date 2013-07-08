@@ -11,7 +11,7 @@
 
 	                <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 								<div class="preview-header">
-									<h1 class="title">
+									<h1 class="title search-header">
 										<a class="no-underline" href="<?php the_permalink(); ?>" title="<?php printf( __('Permalink to %s', 'hbd-theme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a>
 									</h1>
 								</div>
@@ -25,7 +25,7 @@
 
 			                    <div class="content preview-content">
 								<?php the_excerpt( __( 'Continue reading <span class="meta-nav">&raquo;</span>', 'hbd-theme' )  ); ?>
-								<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'hbd-theme' ) . '&after=</div>') ?>
+								<a class="continue" href="<?php the_permalink(); ?>">Continue Reading</a>
 			                    </div>
 
 	                </div>
